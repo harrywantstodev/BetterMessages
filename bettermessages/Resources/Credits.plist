@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>Follow me on Twitter for support.</string>
+		<key>label</key>
+		<string>Support</string>
+		</dict>
+		<dict>
+		<key>big</key>
+		<string>56</string>
+		<key>cellClass</key>
+		<string>HBTwitterCell</string>
+		<key>label</key>
+		<string>eta_son</string>
+		<key>user</key>
+		<string>eta_son</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>His flex patches are the base for this tweak.</string>
+			<key>label</key>
+			<string>Thanks cyber_smith1 for his flex patches!</string>
+			</dict>
+			<dict>
+			<key>big</key>
+			<string>56</string>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>Cyber_Smith1</string>
+			<key>user</key>
+			<string>cyber_smith1</string>
+			</dict>
+			<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string></string>
+			<key>label</key>
+			<string>Donate</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>charity</string>
+			<key>icon</key>
+			<string>paypal.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>label</key>
+			<string>Donate to Mental Health America via PayPal</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>paypal</string>
+			<key>icon</key>
+			<string>paypal.png</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>label</key>
+			<string>Donate to Cyber_Smith1 via PayPal</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Icons made by flaticon.com</string>
+			</dict>
+</array>
+<key>title</key>
+<string>Credits</string>
+</dict>
+</plist>
