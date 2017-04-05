@@ -1,8 +1,6 @@
-# BetterMessages
+# BetterMessages ![Icon](https://raw.githubusercontent.com/harrywantstodev/BetterMessages/master/bettermessages/Resources/icon%403x.png "BetterMessages")
 
 BetterMessages for iOS 10. Available in Cydia for free
-
-![Icon](https://raw.githubusercontent.com/harrywantstodev/BetterMessages/master/bettermessages/Resources/icon%403x.png "BetterMessages")
 
 Compile with [theos](https://github.com/dhowett/theos). `make package install` should be all you need to do!
 
