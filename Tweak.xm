@@ -1,5 +1,26 @@
 #import <libcolorpicker.h>
+//#import <CKUITheme.h>
 //#import <PFColorViewController.h>
+
+@interface CKUITheme : NSObject
+@end
+
+@interface CKUIThemeLight : CKUITheme
+- (UIColor *)entryFieldButtonColor;
+- (UIColor *)entryFieldDarkStyleButtonColor;
+- (id)blue_balloonColors;
+- (id)green_balloonColors;
+- (id)gray_balloonColors;
+-	(id)blue_sendButtonColor;
+-	(id)green_sendButtonColor;
+-	(id)green_waveformColor;
+-	(id)blue_waveformColor;
+- (id)green_balloonTextColor;
+- (id)gray_balloonTextColor;
+- (id)blue_balloonTextColor;
+-	(UIColor *)appTintColor;
+-	(UIColor *)waveformUnplayedColor;
+@end
 
 #define plist @"/var/mobile/Library/Preferences/com.harrywantstodev.bettermessages.plist"
 
@@ -7,30 +28,94 @@ NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile
 //static NSString *const kBetterMessages = @"/var/mobile/Library/Preferences/com.harrywantstodev.bettermessages.plist";
 //static NSMutableDictionary *settings;
 
-static BOOL AutoRotate;
-static BOOL ProgressBar;
-static BOOL PluginButtons;
-static BOOL GroupAvatar;
-static BOOL TypeIndicator;
-static BOOL SquareBalloon;
-static BOOL ChatHead;
-static BOOL TransBack;
-static BOOL SendEffect;
-static BOOL ConvoNames;
-static BOOL HidePreview;
-static BOOL ColorBar;
-static BOOL ColorSend;
-static BOOL NewMessage;
-static BOOL BalloonGrad;
-static BOOL EmojiHeader;
-static BOOL EmojiSpacing;
+static BOOL AutoRotate = NO;
+static BOOL ProgressBar = NO;
+static BOOL PluginButtons = NO;
+static BOOL GroupAvatar = NO;
+static BOOL TypeIndicator = NO;
+static BOOL SquareBalloon = NO;
+static BOOL ChatHead = NO;
+static BOOL TransBack = NO;
+static BOOL SendEffect = NO;
+static BOOL ConvoNames = NO;
+static BOOL HidePreview = NO;
+static BOOL ColorBar = NO;
+static BOOL ColorSend = NO;
+static BOOL NewMessage = NO;
+static BOOL BalloonGrad = NO;
+static BOOL EmojiHeader = NO;
+static BOOL EmojiSpacing = NO;
 
 UIColor *ProgressColour;
 UIColor *SendColor;
 UIColor *navColor;
+UIColor *blueBalloon;
+UIColor *greenBalloon;
+UIColor *grayBalloon;
+UIColor *blueText;
+UIColor *greenText;
+UIColor *grayText;
+UIColor *plugincolor;
 
 NSString *name = @"";
 NSString *previewText = @"";
+
+
+%hook CKUIThemeLight
+-(UIColor *)entryFieldButtonColor
+{
+	return (LCPParseColorString([prefs objectForKey:@"plugincolor"], @"#868e99"));
+}
+- (id)blue_balloonTextColor {
+  return (LCPParseColorString([prefs objectForKey:@"blueText"], @"#ffffff"));
+}
+- (id)green_balloonTextColor {
+  return (LCPParseColorString([prefs objectForKey:@"greenText"], @"#ffffff"));
+}
+- (id)gray_balloonTextColor {
+  return (LCPParseColorString([prefs objectForKey:@"grayText"], @"#000000"));
+}
+- (id)blue_balloonColors
+{
+  return @[(LCPParseColorString([prefs objectForKey:@"blueBalloon"], @"#007aff"))];
+}
+- (id)green_balloonColors
+{
+  return @[(LCPParseColorString([prefs objectForKey:@"greenBalloon"], @"#4bb33a"))];
+}
+-	(id)gray_balloonColors
+{
+  return @[(LCPParseColorString([prefs objectForKey:@"grayBalloon"], @"#e6e5eb"))];
+}
+-(UIColor *)appTintColor
+{
+	return (LCPParseColorString([prefs objectForKey:@"apptint"], @"#007aff"));
+}
+-(UIColor *)waveformUnplayedColor
+{
+	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
+}
+// -(UIColor *)waveformDisabledColor
+// {
+// 	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
+// }
+-(id)green_waveformColor
+{
+	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#4bb33a"));
+}
+-(id)blue_waveformColor
+{
+	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
+}
+-(id)green_sendButtonColor
+{
+	return (LCPParseColorString([prefs objectForKey:@"sendColor"], @"#4bb33a"));
+}
+-(id)blue_sendButtonColor
+{
+	return (LCPParseColorString([prefs objectForKey:@"sendColor"], @"#007aff"));
+}
+%end
 
 %hook UIKeyboardEmojiGraphicsTraits
 -(double)categoryHeaderHeight
@@ -42,6 +127,7 @@ NSString *previewText = @"";
 	return EmojiSpacing ? 0 : %orig;
 }
 %end
+
 %hook CKColoredBalloonView
 -(BOOL)wantsGradient
 {
@@ -49,12 +135,6 @@ NSString *previewText = @"";
 }
 %end
 
-%hook CKEntryViewButton
--(void)setCkTintColor:(id)arg1
-{
-	return ColorSend ? %orig(LCPParseColorString([prefs objectForKey:@"sendColor"], @"#007aff")) : %orig;
-}
-%end
 %hook UIDevice
 -(long long)_graphicsQuality
 {
@@ -269,6 +349,12 @@ static void loadPreferences() {
 		SendColor = LCPParseColorString([prefs objectForKey:@"SendColor"], @"#007aff");
 
 		navColor = LCPParseColorString([prefs objectForKey:@"navColor"], @"#ffffff");
+
+		blueBalloon = LCPParseColorString([prefs objectForKey:@"blueBalloon"], @"#007aff");
+
+		greenBalloon = LCPParseColorString([prefs objectForKey:@"greenBalloon"], @"#4bb33a");
+
+		grayBalloon = LCPParseColorString([prefs objectForKey:@"grayBalloon"], @"#e6e5eb");
 
 		[tempVal release];
 

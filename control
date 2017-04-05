@@ -1,7 +1,7 @@
 Package: com.harrywantstodev.bettermessages
 Name: BetterMessages
 Depends: mobilesubstrate, ws.hbang.common, org.thebigboss.libcolorpicker
-Version: 1.0.1
+Version: 1.1.0
 Architecture: iphoneos-arm
 Description: Change and add a range of features to the iOS 10 Messages App
 Maintainer: harrywantstodev

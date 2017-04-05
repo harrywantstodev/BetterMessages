@@ -92,4 +92,8 @@
 
    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.paypal.com/fundraiser/charity/1354900"]];
 }
+-(void)github {
+
+   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/harrywantstodev/BetterMessages"]];
+}
 @end
