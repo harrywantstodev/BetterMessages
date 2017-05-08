@@ -26,9 +26,9 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>His flex patches are the base for this tweak.</string>
+			<string>This tweak wouldn't be as awesome without these people</string>
 			<key>label</key>
-			<string>Thanks cyber_smith1 for his flex patches!</string>
+			<string>Thanks</string>
 			</dict>
 			<dict>
 			<key>big</key>
@@ -39,6 +39,26 @@
 			<string>Cyber_Smith1</string>
 			<key>user</key>
 			<string>cyber_smith1</string>
+			</dict>
+			<dict>
+			<key>big</key>
+			<string>56</string>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>iKilledAppl3</string>
+			<key>user</key>
+			<string>iKilledAppl3</string>
+			</dict>
+			<dict>
+			<key>big</key>
+			<string>56</string>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>Wizages</string>
+			<key>user</key>
+			<string>Wizages</string>
 			</dict>
 			<dict>
 			<key>cell</key>
@@ -83,6 +103,8 @@
 		<dict>
 			<key>action</key>
 			<string>github</string>
+			<key>footerText</key>
+			<string>Icons from flaticon.com</string>
 			<key>icon</key>
 			<string>github.png</string>
 			<key>cell</key>
@@ -90,14 +112,8 @@
 			<key>cellClass</key>
 			<string>HBTintedTableCell</string>
 			<key>label</key>
-			<string>View Source on GitHub</string>
+			<string>View Source Code on GitHub</string>
 		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>Icons made by flaticon.com</string>
-			</dict>
 </array>
 <key>title</key>
 <string>Credits</string>

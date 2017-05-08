@@ -1,7 +1,9 @@
 include $(THEOS)/makefiles/common.mk
 
+GO_EASY_ON_ME = 1
+
 TWEAK_NAME = BetterMessages
-BetterMessages_FILES = Tweak.xm
+BetterMessages_FILES = BetterMessages.xm 
 BetterMessages_EXTRA_FRAMEWORKS += Cephei cepheiprefs
 BetterMessages_LIBRARIES = colorpicker
 
