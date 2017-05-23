@@ -12,14 +12,6 @@
     	[self setBackgroundView:test];
 			return %orig;
 }
-// -(void)layoutSubviews {
-// 	%orig;
-//
-// self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:customImgPath]];
-// self.view.contentMode = UIViewContentModeScaleAspectFit;
-// self.view.clipsToBounds = YES;
-//
-// }
 %end
 
 %hook CKUIThemeDark
@@ -167,30 +159,30 @@
 }
 %end
 
-%hook CKColoredBalloonView
--(BOOL)wantsGradient
-{
-	return BalloonGrad ? FALSE : %orig;
-}
-%end
+// %hook CKColoredBalloonView
+// -(BOOL)wantsGradient
+// {
+// 	return BalloonGrad ? FALSE : %orig;
+// }
+// %end
 
-%hook UIDevice
--(long long)_graphicsQuality
-{
-	return TransBack ? 10 : %orig;
-}
-%end
-
-%hook _UIBackdropViewSettings
--(double)blurRadius
-{
-	return TransBack ? 0 : %orig;
-}
--(double)grayscaleTintAlpha
-{
-	return TransBack ? 0 : %orig;
-}
-%end
+// %hook UIDevice
+// -(long long)_graphicsQuality
+// {
+// 	return TransBack ? 10 : %orig;
+// }
+// %end
+//
+// %hook _UIBackdropViewSettings
+// -(double)blurRadius
+// {
+// 	return TransBack ? 0 : %orig;
+// }
+// -(double)grayscaleTintAlpha
+// {
+// 	return TransBack ? 0 : %orig;
+// }
+// %end
 
 %hook CKFullScreenAppNavbarManager
 -(bool)_canShowAvatarView
@@ -214,6 +206,16 @@
 %end
 
 %hook CKUIBehavior
+-(id)balloonName
+{
+	return Outline ? ([self strokedBalloonName]) : %orig;
+}
+
+//Spelling is right Apple spelled it wrong.
+-(id)taillessBallonName
+{
+	return Outline ? ([self strokedTaillessBalloonName]) : %orig;
+}
 -(bool)canShowContactPhotosInConversationList
 {
 	return ChatHead ? FALSE : %orig;
@@ -311,7 +313,7 @@
 }
 -(void)configureEffectForStyle:(long long)arg1 backgroundTintColor:(id)arg2 forceOpaque:(BOOL)arg3
 {
-	return %orig(arg1, (LCPParseColorString([prefs objectForKey:@"navColor"], @"%orig")), TRUE);
+	return %orig(arg1, (LCPParseColorString([prefs objectForKey:@"navColor"], arg2)), TRUE);
 }
 %end
 
@@ -353,8 +355,8 @@ static void loadPreferences() {
 		tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("SquareBalloon"), CFSTR("com.harrywantstodev.bettermessages"));
 		SquareBalloon = !tempVal ? YES : [tempVal boolValue];
 
-		tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("TransBack"), CFSTR("com.harrywantstodev.bettermessages"));
-		TransBack = !tempVal ? YES : [tempVal boolValue];
+		// tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("TransBack"), CFSTR("com.harrywantstodev.bettermessages"));
+		// TransBack = !tempVal ? YES : [tempVal boolValue];
 
 		tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("ChatHead"), CFSTR("com.harrywantstodev.bettermessages"));
 		ChatHead = !tempVal ? YES : [tempVal boolValue];
@@ -377,8 +379,8 @@ static void loadPreferences() {
 		tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("NewMessage"), CFSTR("com.harrywantstodev.bettermessages"));
 		NewMessage = !tempVal ? YES : [tempVal boolValue];
 
-		tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("BalloonGrad"), CFSTR("com.harrywantstodev.bettermessages"));
-		BalloonGrad = !tempVal ? YES : [tempVal boolValue];
+		// tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("BalloonGrad"), CFSTR("com.harrywantstodev.bettermessages"));
+		// BalloonGrad = !tempVal ? YES : [tempVal boolValue];
 
 		tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("EmojiHeader"), CFSTR("com.harrywantstodev.bettermessages"));
 		EmojiHeader = !tempVal ? YES : [tempVal boolValue];
@@ -388,6 +390,9 @@ static void loadPreferences() {
 
 		tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("OpenTo"), CFSTR("com.harrywantstodev.bettermessages"));
 		OpenTo = !tempVal ? YES : [tempVal boolValue];
+
+		tempVal = (NSNumber *)CFPreferencesCopyAppValue(CFSTR("Outline"), CFSTR("com.harrywantstodev.bettermessages"));
+		Outline = !tempVal ? YES : [tempVal boolValue];
 
 		ProgressColour = LCPParseColorString([prefs objectForKey:@"favoriteColor"], @"#007aff");
 

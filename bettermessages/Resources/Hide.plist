@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+      <array>
+        <dict>
+          <key>cell</key>
+          <string>PSGroupCell</string>
+          <key>label</key>
+          <string>Hide Stuff</string>
+        </dict>
+        <dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <true/>
+            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
+            <key>key</key>              <string>PluginButtons</string>
+            <key>label</key>            <string>Hide Plugin Buttons</string>
+            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
+        </dict>
+        <dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <true/>
+            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
+            <key>key</key>              <string>GroupAvatar</string>
+            <key>label</key>            <string>Hide Group Chat Avatar</string>
+            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
+        </dict>
+        <dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <true/>
+            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
+            <key>key</key>              <string>ConvoNames</string>
+            <key>label</key>            <string>Hide Conversation Names</string>
+            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
+        </dict>
+        <dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <true/>
+            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
+            <key>key</key>              <string>NewMessage</string>
+            <key>label</key>            <string>Hide New Message Dot</string>
+            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
+        </dict>
+        <dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <true/>
+            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
+            <key>key</key>              <string>HidePreview</string>
+            <key>label</key>            <string>Hide Conversation Previews</string>
+            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
+        </dict>
+        <dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <true/>
+            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
+            <key>key</key>              <string>ChatHead</string>
+            <key>label</key>            <string>Hide Contact Photos</string>
+            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
+        </dict>
+    </array>
+    <key>title</key>
+    <string>Hide</string>
+</dict>
+</plist>

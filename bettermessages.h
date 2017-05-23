@@ -15,6 +15,13 @@
 @interface CKUITheme : NSObject
 @end
 
+@interface CKUIBehavior : NSObject {
+
+}
+@property (nonatomic,readonly) NSString * strokedBalloonName;
+@property (nonatomic,readonly) NSString * strokedTaillessBalloonName;
+@end
+
 @interface UIImage (Addition)
 + (UIImage *)kitImageNamed:(NSString *)name;
 + (UIImage *)imageNamed:(NSString *)name inBundle:(NSBundle *)bundle;
@@ -83,6 +90,7 @@ static BOOL BalloonGrad = NO;
 static BOOL EmojiHeader = NO;
 static BOOL EmojiSpacing = NO;
 static BOOL OpenTo = NO;
+static BOOL Outline = NO;
 
 UIColor *ProgressColour;
 UIColor *SendColor;

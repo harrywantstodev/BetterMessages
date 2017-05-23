@@ -11,432 +11,53 @@
           <string>Hide Stuff</string>
         </dict>
         <dict>
-            <key>cell</key>             <string>PSSwitchCell</string>
-            <key>default</key>          <true/>
-            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>              <string>PluginButtons</string>
-            <key>label</key>            <string>Hide Plugin Buttons</string>
-            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-        </dict>
-        <dict>
-            <key>cell</key>             <string>PSSwitchCell</string>
-            <key>default</key>          <true/>
-            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>              <string>GroupAvatar</string>
-            <key>label</key>            <string>Hide Group Chat Avatar</string>
-            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-        </dict>
-        <dict>
-            <key>cell</key>             <string>PSSwitchCell</string>
-            <key>default</key>          <true/>
-            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>              <string>ConvoNames</string>
-            <key>label</key>            <string>Hide Conversation Names</string>
-            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-        </dict>
-        <dict>
-            <key>cell</key>             <string>PSSwitchCell</string>
-            <key>default</key>          <true/>
-            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>              <string>NewMessage</string>
-            <key>label</key>            <string>Hide New Message Dot</string>
-            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-        </dict>
-        <dict>
-            <key>cell</key>             <string>PSSwitchCell</string>
-            <key>default</key>          <true/>
-            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>              <string>HidePreview</string>
-            <key>label</key>            <string>Hide Conversation Previews</string>
-            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-        </dict>
-        <dict>
-            <key>cell</key>             <string>PSSwitchCell</string>
-            <key>default</key>          <true/>
-            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>              <string>ChatHead</string>
-            <key>label</key>            <string>Hide Contact Photos</string>
-            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-        </dict>
-        <dict>
-          <key>cell</key>
-          <string>PSGroupCell</string>
-          <key>label</key>
-          <string>Balloon Stuff</string>
-        </dict>
-        <dict>
-            <key>cell</key>             <string>PSSwitchCell</string>
-            <key>default</key>          <true/>
-            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>              <string>SquareBalloon</string>
-            <key>label</key>            <string>Square Message Balloons</string>
-            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-        </dict>
-        <dict>
-            <key>cell</key>             <string>PSSwitchCell</string>
-            <key>default</key>          <true/>
-            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>              <string>BalloonGrad</string>
-            <key>label</key>            <string>Remove Gradient</string>
-            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-          </dict>
-          <dict>
-            <key>cell</key>
-            <string>PSLinkCell</string>
-            <key>cellClass</key>
-            <string>PFSimpleLiteColorCell</string>
-            <key>libcolorpicker</key>
-            <dict>
-            <key>defaults</key>
-            <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>
-            <string>blueBalloon</string>
-            <key>fallback</key>
-            <string>#007aff</string>
-            <key>PostNotification</key>
-            <string>com.harrywantstodev.bettermessages/settingschanged</string>
-            <key>alpha</key>
-            <true/> <!-- <true/> or <false/> Show alpha slider -->
-            </dict>
-            <key>label</key>
-            <string>Blue Balloon Color</string>
-          </dict>
-          <dict>
-            <key>cell</key>
-            <string>PSLinkCell</string>
-            <key>cellClass</key>
-            <string>PFSimpleLiteColorCell</string>
-            <key>libcolorpicker</key>
-            <dict>
-            <key>defaults</key>
-            <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>
-            <string>blueText</string>
-            <key>fallback</key>
-            <string>#ffffff</string>
-            <key>PostNotification</key>
-            <string>com.harrywantstodev.bettermessages/settingschanged</string>
-            <key>alpha</key>
-            <true/> <!-- <true/> or <false/> Show alpha slider -->
-            </dict>
-            <key>label</key>
-            <string>Blue Balloon Text Color</string>
-          </dict>
-          <dict>
-            <key>cell</key>
-            <string>PSLinkCell</string>
-            <key>cellClass</key>
-            <string>PFSimpleLiteColorCell</string>
-            <key>libcolorpicker</key>
-            <dict>
-            <key>defaults</key>
-            <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>
-            <string>greenBalloon</string>
-            <key>fallback</key>
-            <string>#4bb33a</string>
-            <key>PostNotification</key>
-            <string>com.harrywantstodev.bettermessages/settingschanged</string>
-            <key>alpha</key>
-            <true/> <!-- <true/> or <false/> Show alpha slider -->
-            </dict>
-            <key>label</key>
-            <string>Green Balloon Color</string>
-          </dict>
-          <dict>
-            <key>cell</key>
-            <string>PSLinkCell</string>
-            <key>cellClass</key>
-            <string>PFSimpleLiteColorCell</string>
-            <key>libcolorpicker</key>
-            <dict>
-            <key>defaults</key>
-            <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>
-            <string>greenText</string>
-            <key>fallback</key>
-            <string>#ffffff</string>
-            <key>PostNotification</key>
-            <string>com.harrywantstodev.bettermessages/settingschanged</string>
-            <key>alpha</key>
-            <true/> <!-- <true/> or <false/> Show alpha slider -->
-            </dict>
-            <key>label</key>
-            <string>Green Balloon Text Color</string>
-          </dict>
-          <dict>
-            <key>cell</key>
-            <string>PSLinkCell</string>
-            <key>cellClass</key>
-            <string>PFSimpleLiteColorCell</string>
-            <key>libcolorpicker</key>
-            <dict>
-            <key>defaults</key>
-            <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>
-            <string>grayBalloon</string>
-            <key>fallback</key>
-            <string>#e6e5eb</string>
-            <key>PostNotification</key>
-            <string>com.harrywantstodev.bettermessages/settingschanged</string>
-            <key>alpha</key>
-            <true/> <!-- <true/> or <false/> Show alpha slider -->
-            </dict>
-            <key>label</key>
-            <string>Incoming Balloon Color</string>
-          </dict>
-          <dict>
-            <key>cell</key>
-            <string>PSLinkCell</string>
-            <key>cellClass</key>
-            <string>PFSimpleLiteColorCell</string>
-            <key>libcolorpicker</key>
-            <dict>
-            <key>defaults</key>
-            <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>
-            <string>grayText</string>
-            <key>fallback</key>
-            <string>#000000</string>
-            <key>PostNotification</key>
-            <string>com.harrywantstodev.bettermessages/settingschanged</string>
-            <key>alpha</key>
-            <true/> <!-- <true/> or <false/> Show alpha slider -->
-            </dict>
-            <key>label</key>
-            <string>Incoming Balloon Text Color</string>
-          </dict>
-        <dict>
-          <key>cell</key>
-          <string>PSGroupCell</string>
-          <key>label</key>
-          <string>Color Stuff</string>
-        </dict>
-        <dict>
-          <key>action</key>
-          <string>PickerImage</string>
-          <key>cell</key>
-          <string>PSButtonCell</string>
-          <key>label</key>
-          <string>Choose a Background</string>
-          <key>icon</key>
-          <string>photo@3x.png</string>
-        </dict>
-        <dict>
-            <key>cell</key>             <string>PSSwitchCell</string>
-            <key>default</key>          <true/>
-            <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-            <key>key</key>              <string>ProgressBar</string>
-            <key>label</key>            <string>Add A Sending Progress Bar</string>
-            <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-          </dict>
-					<dict>
-						<key>cell</key>
-						<string>PSLinkCell</string>
-						<key>cellClass</key>
-						<string>PFSimpleLiteColorCell</string>
-						<key>libcolorpicker</key>
-						<dict>
-						<key>defaults</key>
-						<string>com.harrywantstodev.bettermessages</string>
-						<key>key</key>
-						<string>favoriteColor</string>
-						<key>fallback</key>
-						<string>#007aff</string>
-						<key>PostNotification</key>
-						<string>com.harrywantstodev.bettermessages/settingschanged</string>
-						<key>alpha</key>
-						<false/> <!-- <true/> or <false/> Show alpha slider -->
-						</dict>
-						<key>label</key>
-						<string>Progress Bar Color</string>
-					</dict>
-        <dict>
-          <key>cell</key>
-          <string>PSLinkCell</string>
-          <key>cellClass</key>
-          <string>PFSimpleLiteColorCell</string>
-          <key>libcolorpicker</key>
-          <dict>
-          <key>defaults</key>
-          <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>
-          <string>sendColor</string>
-          <key>fallback</key>
-          <string>#007aff</string>
-          <key>PostNotification</key>
-          <string>com.harrywantstodev.bettermessages/settingschanged</string>
-          <key>alpha</key>
-          <false/> <!-- <true/> or <false/> Show alpha slider -->
-          </dict>
-          <key>label</key>
-          <string>Send Color</string>
-        </dict>
-        <dict>
-          <key>cell</key>
-          <string>PSLinkCell</string>
-          <key>cellClass</key>
-          <string>PFSimpleLiteColorCell</string>
-          <key>libcolorpicker</key>
-          <dict>
-          <key>defaults</key>
-          <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>
-          <string>waveform</string>
-          <key>fallback</key>
-          <string>#007aff</string>
-          <key>PostNotification</key>
-          <string>com.harrywantstodev.bettermessages/settingschanged</string>
-          <key>alpha</key>
-          <false/> <!-- <true/> or <false/> Show alpha slider -->
-          </dict>
-          <key>label</key>
-          <string>Audio Message Color</string>
-        </dict>
-        <dict>
-          <key>cell</key>
-          <string>PSLinkCell</string>
-          <key>cellClass</key>
-          <string>PFSimpleLiteColorCell</string>
-          <key>libcolorpicker</key>
-          <dict>
-          <key>defaults</key>
-          <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>
-          <string>apptint</string>
-          <key>fallback</key>
-          <string>#007aff</string>
-          <key>PostNotification</key>
-          <string>com.harrywantstodev.bettermessages/settingschanged</string>
-          <key>alpha</key>
-          <false/> <!-- <true/> or <false/> Show alpha slider -->
-          </dict>
-          <key>label</key>
-          <string>App UI Tint Color</string>
-        </dict>
-        <dict>
-          <key>cell</key>
-          <string>PSLinkCell</string>
-          <key>cellClass</key>
-          <string>PFSimpleLiteColorCell</string>
-          <key>libcolorpicker</key>
-          <dict>
-          <key>defaults</key>
-          <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>
-          <string>plugincolor</string>
-          <key>fallback</key>
-          <string>#868e99</string>
-          <key>PostNotification</key>
-          <string>com.harrywantstodev.bettermessages/settingschanged</string>
-          <key>alpha</key>
-          <true/> <!-- <true/> or <false/> Show alpha slider -->
-          </dict>
-          <key>label</key>
-          <string>Plugin Button Color</string>
-        </dict>
-        <dict>
-          <key>cell</key>
-          <string>PSLinkCell</string>
-          <key>cellClass</key>
-          <string>PFSimpleLiteColorCell</string>
-          <key>libcolorpicker</key>
-          <dict>
-          <key>defaults</key>
-          <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>
-          <string>backgroundcolor</string>
-          <key>fallback</key>
-          <string>#ffffff</string>
-          <key>PostNotification</key>
-          <string>com.harrywantstodev.bettermessages/settingschanged</string>
-          <key>alpha</key>
-          <true/> <!-- <true/> or <false/> Show alpha slider -->
-          </dict>
-          <key>label</key>
-          <string>Chat Background Color</string>
-        </dict>
-        <dict>
-          <key>cell</key>
-          <string>PSLinkCell</string>
-          <key>cellClass</key>
-          <string>PFSimpleLiteColorCell</string>
-          <key>libcolorpicker</key>
-          <dict>
-          <key>defaults</key>
-          <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>
-          <string>navColor</string>
-          <key>fallback</key>
-          <string>#ffffff</string>
-          <key>PostNotification</key>
-          <string>com.harrywantstodev.bettermessages/settingschanged</string>
-          <key>alpha</key>
-          <false/> <!-- <true/> or <false/> Show alpha slider -->
-          </dict>
-          <key>label</key>
-          <string>Navagation Bar Color</string>
-        </dict>
-        <dict>
-          <key>cell</key>
-          <string>PSGroupCell</string>
-          <key>label</key>
-          <string>Emoji Stuff</string>
-        </dict>
-        <dict>
-          <key>cell</key>             <string>PSSwitchCell</string>
-          <key>default</key>          <true/>
-          <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>              <string>EmojiHeader</string>
-          <key>label</key>            <string>Remove Emoji Header</string>
-          <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-      </dict>
-      <dict>
-        <key>cell</key>             <string>PSSwitchCell</string>
-        <key>default</key>          <true/>
-        <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-        <key>key</key>              <string>EmojiSpacing</string>
-        <key>label</key>            <string>6 Rows Of Emojis</string>
-        <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
+      <key>cell</key>
+      <string>PSLinkCell</string>
+      <key>detail</key>
+      <string>Theme</string>
+      <key>isController</key>
+      <string>1</string>
+      <key>label</key>
+      <string>Theme</string>
+      <key>icon</key>
+      <string>theme@3x.png</string>
     </dict>
-        <dict>
-          <key>cell</key>
-          <string>PSGroupCell</string>
-          <key>label</key>
-          <string>Misc Stuff</string>
-        </dict>
-        <dict>
-          <key>cell</key>             <string>PSSwitchCell</string>
-          <key>default</key>          <true/>
-          <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>              <string>AutoRotate</string>
-          <key>label</key>            <string>Disable Auto Rotation</string>
-          <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-      </dict>
-      <dict>
-          <key>cell</key>             <string>PSSwitchCell</string>
-          <key>default</key>          <true/>
-          <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>              <string>TransBack</string>
-          <key>label</key>            <string>See Through Navigation Bar</string>
-          <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-      </dict>
-      <dict>
-          <key>cell</key>             <string>PSSwitchCell</string>
-          <key>default</key>          <true/>
-          <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>              <string>SendEffect</string>
-          <key>label</key>            <string>Disable Long Press Send Effects</string>
-          <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-      </dict>
-      <dict>
-          <key>cell</key>             <string>PSSwitchCell</string>
-          <key>default</key>          <true/>
-          <key>defaults</key>         <string>com.harrywantstodev.bettermessages</string>
-          <key>key</key>              <string>OpenTo</string>
-          <key>label</key>            <string>Open To Conversation List</string>
-          <key>PostNotification</key> <string>com.harrywantstodev.bettermessages/settingschanged</string>
-      </dict>
+    <dict>
+  <key>cell</key>
+  <string>PSLinkCell</string>
+  <key>detail</key>
+  <string>Hide</string>
+  <key>isController</key>
+  <string>1</string>
+  <key>label</key>
+  <string>Hide</string>
+  <key>icon</key>
+  <string>hide@3x.png</string>
+</dict>
+<dict>
+<key>cell</key>
+<string>PSLinkCell</string>
+<key>detail</key>
+<string>Misc</string>
+<key>isController</key>
+<string>1</string>
+<key>label</key>
+<string>Misc</string>
+<key>icon</key>
+<string>Misc@3x.png</string>
+</dict>
+<dict>
+<key>cell</key>
+<string>PSLinkCell</string>
+<key>detail</key>
+<string>Credits</string>
+<key>isController</key>
+<string>1</string>
+<key>label</key>
+<string>Credits</string>
+<key>icon</key>
+<string>credits@3x.png</string>
+</dict>
             <dict>
         			<key>FooterText</key>
         			<string>Respring to apply changes.</string>
@@ -461,16 +82,7 @@
             <key>label</key>
             <string></string>
             </dict>
-            <dict>
-          <key>cell</key>
-          <string>PSLinkCell</string>
-          <key>detail</key>
-          <string>Credits</string>
-          <key>isController</key>
-          <string>1</string>
-          <key>label</key>
-          <string>Credits</string>
-        </dict>
+
     </array>
     <key>title</key>
     <string>BetterMessages</string>
