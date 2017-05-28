@@ -3,11 +3,11 @@ include $(THEOS)/makefiles/common.mk
 GO_EASY_ON_ME = 1
 
 BUNDLE_NAME = BetterMessages
-BetterMessages_FILES = bettermessagesRootListController.m GKCropBorderView.m GKImageCropOverlayView.m GKImageCropView.m GKImageCropViewController.m GKImagePicker.m GKResizeableCropOverlayView.m
+BetterMessages_FILES = bettermessagesRootListController.m
 BetterMessages_INSTALL_PATH = /Library/PreferenceBundles
-BetterMessages_FRAMEWORKS = UIKit
+BetterMessages_FRAMEWORKS = UIKit CoreGraphics
 BetterMessages_PRIVATE_FRAMEWORKS = Preferences
-BetterMessages_EXTRA_FRAMEWORKS += Cephei cepheiprefs
+BetterMessages_EXTRA_FRAMEWORKS += Cephei 
 BetterMessages_LIBRARIES = colorpicker
 
 include $(THEOS_MAKE_PATH)/bundle.mk

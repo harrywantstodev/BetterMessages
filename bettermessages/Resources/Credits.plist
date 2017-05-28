@@ -28,7 +28,7 @@
 			<key>footerText</key>
 			<string>This tweak wouldn't be as awesome without these people</string>
 			<key>label</key>
-			<string>Thanks</string>
+			<string>Thank you</string>
 			</dict>
 			<dict>
 			<key>big</key>
@@ -59,6 +59,26 @@
 			<string>Wizages</string>
 			<key>user</key>
 			<string>Wizages</string>
+			</dict>
+			<dict>
+			<key>big</key>
+			<string>56</string>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>CydiaGeek</string>
+			<key>user</key>
+			<string>CydiaGeek</string>
+			</dict>
+			<dict>
+			<key>big</key>
+			<string>56</string>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>Sticktron</string>
+			<key>user</key>
+			<string>Sticktron</string>
 			</dict>
 			<dict>
 			<key>cell</key>

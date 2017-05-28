@@ -51,25 +51,25 @@
 {
 	return (LCPParseColorString([prefs objectForKey:@"apptint"], @"#007aff"));
 }
--(UIColor *)waveformUnplayedColor
-{
-	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
-}
+// -(UIColor *)waveformUnplayedColor
+// {
+// 	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
+// }
 // -(UIColor *)waveformDisabledColor
 // {
 // 	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
 // }
 -(id)gray_waveformColor
 {
-	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#4bb33a"));
+	return (LCPParseColorString([prefs objectForKey:@"grayWave"], @"#e6e5eb"));
 }
 -(id)green_waveformColor
 {
-	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#4bb33a"));
+	return (LCPParseColorString([prefs objectForKey:@"greenWave"], @"#4bb33a"));
 }
 -(id)blue_waveformColor
 {
-	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
+	return (LCPParseColorString([prefs objectForKey:@"blueWave"], @"#007aff"));
 }
 -(id)green_sendButtonColor
 {
@@ -118,25 +118,25 @@
 {
 	return (LCPParseColorString([prefs objectForKey:@"apptint"], @"#007aff"));
 }
--(UIColor *)waveformUnplayedColor
-{
-	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
-}
+// -(UIColor *)waveformUnplayedColor
+// {
+// 	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
+// }
 // -(UIColor *)waveformDisabledColor
 // {
 // 	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
 // }
 -(id)gray_waveformColor
 {
-	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#4bb33a"));
+	return (LCPParseColorString([prefs objectForKey:@"grayWave"], @"#e6e5eb"));
 }
 -(id)green_waveformColor
 {
-	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#4bb33a"));
+	return (LCPParseColorString([prefs objectForKey:@"greenWave"], @"#4bb33a"));
 }
 -(id)blue_waveformColor
 {
-	return (LCPParseColorString([prefs objectForKey:@"waveform"], @"#007aff"));
+	return (LCPParseColorString([prefs objectForKey:@"blueWave"], @"#007aff"));
 }
 -(id)green_sendButtonColor
 {
